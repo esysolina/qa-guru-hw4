@@ -7,6 +7,7 @@ public class Model {
         int age;
         int weight;
         String favToy;
+        boolean place;
 
         public void bark() {
             System.out.println("Woof!");
@@ -22,6 +23,10 @@ public class Model {
 
         public void bringToy() {
             System.out.println(favToy);
+        }
+
+        public void goToPlace(){
+            place = true;
         }
     }
 
@@ -47,5 +52,7 @@ public class Model {
         max.bark();
         max.stepOnScale();
         max.bringToy();
+        max.goToPlace();
+        System.out.println(max.place);
     }
 }
